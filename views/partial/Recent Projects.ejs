@@ -1,0 +1,59 @@
+<%-include("partial/header.ejs")%>
+
+<title>OUR RECENT PROJECTS</title>
+<style>
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.slide {
+  display: none;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+
+</style>
+
+
+<div class="slideshow-container">
+  <div class="">
+    <img src="image1.jpg" alt="Image 1">
+  </div>
+  <div class="slide fade">
+    <img src="image2.jpg" alt="Image 2">
+  </div>
+  <div class="slide fade">
+    <img src="image3.jpg" alt="Image 3">
+  </div>
+  <!-- Add more images as needed -->
+</div>
+<script>
+    let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let slides = document.getElementsByClassName("slide");
+  for (let i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  slides[slideIndex-1].style.display = "block";  
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+
+</script>
+
+<%- include('partial/footer') %>

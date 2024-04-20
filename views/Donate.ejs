@@ -1,0 +1,132 @@
+<%- include('partial/header') %>
+
+<title>Donation Form</title>
+
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+  }
+
+  h2, h3 {
+    color: #333;
+    text-align: center;
+  }
+
+  form {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+  }
+
+  input[type="submit"]:hover {
+    background-color: #45a049;
+  }
+
+  #customAmount {
+    display: none;
+  }
+
+  .account-info {
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  li {
+    margin-bottom: 10px;
+  }
+
+  strong {
+    font-weight: bold;
+    color: #333;
+  }
+
+  .bank-details {
+    margin-top: 20px;
+    padding-left: 20px;
+    border-left: 2px solid #ccc;
+  }
+  .accountNumber{
+   text-align: center;
+   color: #ea1515;
+   
+
+  }
+</style>
+
+
+<div class="account-info">
+  <h2>Account Information</h2>
+  <ul>
+    <li><strong>Account Name:</strong> ASMAN ABDUL FOUNDATION</li>
+    <li><strong>Bank Name:</strong> KENYA COMMERCIAL BANK(KCB)</li>
+    <li><strong>Bank Swift Code:</strong> KCBLKENXXX</li>
+    <li><strong>Bank Code:</strong> 01</li>
+  </ul>
+  <div class="bank-details">
+    <ul>
+      <li><strong>Bank Branch:</strong> 288</li>
+      <li><strong>Bank Address:</strong> AGIP HOUSE, HAILE SELASSIE AVENUE</li>
+      <li><strong>Bank P.O. BOX:</strong> 58992-00200 NAIROBI-KENYA</li>
+    </ul>
+  </div>
+  <h3>OUR ACCOUNT NUMBERS (By Currency)</h3>
+  <ul>
+    <li><strong>Kenya Shilling:</strong> xxxxxxx</li>
+    <li><strong>Euro €:</strong> xxxxxx</li>
+    <li><strong>US Dollar $:</strong>xxxxxx</li>
+    <li><strong>Pound £:</strong>xxxxx</li>
+  </ul>
+</div>.
+<br>
+
+<div class="accountNumber">
+<h2>PAYBILL NUMBER: 522522</h2>
+  <h1>ACCOUNT NO:01244xxxxx987</h1>
+
+  <p>Thank you</p>
+</div>
+
+
+<%- include('partial/footer') %>
